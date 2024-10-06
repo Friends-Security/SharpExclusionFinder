@@ -214,7 +214,7 @@ class Program
 
       // Run the Windows Defender scan command on the current directory
       string command = $@"C:\Program Files\Windows Defender\MpCmdRun.exe";
-      string args = $"-Scan -ScanType 3 -File \"{currentPath}\\|*\"";
+      string args = $"-Scan -ScanType 3 -File \"{currentPath}\\|*\" -CpuThrottling 0";
 
       string output = RunProcess(command, args);
 

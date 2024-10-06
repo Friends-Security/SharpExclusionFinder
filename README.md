@@ -34,10 +34,9 @@ A blog explaining the technique utilised can be viewed here - https://blog.fndse
 
 ## Example Output
 ```
-Progress: Scanned 1500 of 18091 directories (8.29% complete). Time elapsed: 9.90 seconds.
-[+] Folder C:\users\user\example is excluded
-Progress: Scanned 1600 of 18091 directories (8.84% complete). Time elapsed: 10.53 seconds.
-Progress: Scanned 1700 of 18091 directories (9.4% complete). Time elapsed: 11.27 seconds.
+Processed 2000 directories. Time elapsed: 23.78 seconds.
+[+] Folder C:\users\user\Example is excluded
+Processed 2500 directories. Time elapsed: 30.77 seconds.
 ```
 
 ## Prerequisites
