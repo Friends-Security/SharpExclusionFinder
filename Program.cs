@@ -87,7 +87,8 @@ class Program
 
   static void PrintHelp()
   {
-    Console.WriteLine("Usage: program.exe <BasePath> [options]");
+    Console.WriteLine("Usage: SharpExclusionFinder.exe <BasePath> [options]");
+    Console.WriteLine("Authors: Hoshea Yarden, Hai Vaknin, Yehuda Smirnov, Noam Pomerantz");
     Console.WriteLine("Options:");
     Console.WriteLine("  --max-threads N      Set the maximum number of threads (default 3)");
     Console.WriteLine("  --depth N            Set the maximum directory depth to scan (1 = immediate subdirectories)");
@@ -213,7 +214,7 @@ class Program
 
       // Run the Windows Defender scan command on the current directory
       string command = $@"C:\Program Files\Windows Defender\MpCmdRun.exe";
-      string args = $"-Scan -ScanType 3 -File \"{currentPath}\\|*\"";
+      string args = $"-Scan -ScanType 3 -File \"{currentPath}\\|*\" -CpuThrottling 0";
 
       string output = RunProcess(command, args);
 
